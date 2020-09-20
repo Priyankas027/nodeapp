@@ -1,9 +1,9 @@
 pipeline {
     agent any
+stges{
  stage('Deploy node app') {
-
-sh ''pwd
-pm2 start app.js''
-
+steps{
+sh 'pm2 start app.js'
 }
+}}
 }
