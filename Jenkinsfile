@@ -3,7 +3,8 @@ pipeline {
 stages{
  stage('Deploy node app') {
 steps{
-sh 'pm2 restart nodeappdeployr'
+sh 'sudo pm2 restart nodeappdeployr'
 }
 }}
 }
+  
